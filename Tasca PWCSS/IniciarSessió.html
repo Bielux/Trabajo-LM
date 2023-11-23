@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/CSSIS.css">  <!--enlazamos la pagina html con una css-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+        } /*creamos una fuente para el título*/
+        </style>
+        
+</head>
+<body>
+
+    <header> <!--creamos el encabezado con un titulo un subtitulo y un navegador-->
+        <h1>Iniciar sessió:</h1>
+        <hr>
+        <nav>
+
+            <a  href="Inici.html"class="selected">Inici</a>
+            <a  href="audios.html" class="selected">Pàgina d'audios</a>
+            <a  href="videos.html" class="selected">Pàgina de videos</a>
+            <a  href="taules.html" class="selected">Pàgina de taules</a>
+            <a  href="IniciarSessió.html" class="selected">Iniciar sessió</a>
+
+        </nav>
+        <hr>
+    </header>
+
+    <article>
+        <form class="contacto"> <!--creamos un formulario con form y le damos una clase-->
+
+            <fieldset> <!--creamos una caja de informacio de datos personales-->
+    
+                <legend><strong> Datos personales </strong></legend> <!--con el legend le damos un nombre a esa caja-->
+                <input type="text" id="fname"  
+                name="fname" placeholder="Nombre"
+                required><!-- empezamos a creae diferentes inputs para el nombre apellido fecha de nacimiento...-->
+                <input type="text" id="fname"
+                name="fname" placeholder="Apellido"
+                required>
+                <label for="Fechan">Fecha de Nacimiento</label>
+                <input type="date" id="Fechan"><br>
+            
+        
+                <label for="sexo">Sexo</label>
+        
+                <select name="sexo" id="sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+                </select>
+    
+        </fieldset>
+    
+        <br>
+    
+        <fieldset> <!--aqui hacemos lo mismo cramos una caja para la informacion de registro-->
+            <legend><strong>Información de Registro </strong></legend> <!--le ponemos nombre a esa caja-->
+    
+            <input type="email" id="email"
+            name="email" placeholder="Correo"
+            required> <!--creamos diferentes inputs para crear dif¡rents botones o cajase como el correo y la conteraseña-->
+    
+            <input type="password" id="password"
+            name="password" placeholder="Contraseña"
+            required>
+    
+        </fieldset>
+    
+    
+        <button class="boton" type="submit">Iniciar </button> <!--por últimon cereamos el boton opara nviar toda esta informacion de inicio de sesión-->
+    
+        </form>
+
+    </article>
+</body>
+</html>

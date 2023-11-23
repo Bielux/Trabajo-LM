@@ -1,0 +1,42 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos.html</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/CSSVideos.css"> <!--enlazamos la pagina html con una css-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+        } /*creamos una fuente para el título*/
+        </style>
+        
+</head>
+<body>
+    <header> <!--creamos el encabezado con un titulo un subtitulo y un navegador-->
+        <h1>Pàgina de videos:</h1>
+        <hr>
+        <nav>
+
+                <a  href="Inici.html"class="selected">Inici</a>
+                <a  href="audios.html" class="selected">Pàgina d'audios</a>
+                <a  href="videos.html" class="selected">Pàgina de videos</a>
+                <a  href="taules.html" class="selected">Pàgina de taules</a>
+                <a  href="IniciarSessió.html" class="selected">Iniciar sessió</a>
+
+        </nav>
+        <hr>
+    </header>
+
+    <article>
+        <p>Video 1:</p>     <!--Para que se vea los videos se usa el comando <video src="aqui pondremos el enlace del video en .mp4"-->
+        <video src="MP4/meme.mp4" controls width="300" height="250"></video> <!--a continuacion ejecutaremos el comando controls para que se vean los controles del video-->
+
+        <bre>
+        </bre><p>Video 2:</p>
+        <video src="MP4/esqueletos.mp4" controls width="300" height="250"></video>
+    </article>
+    
+</body>
+</html>

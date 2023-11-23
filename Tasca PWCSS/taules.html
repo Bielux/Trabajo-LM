@@ -1,0 +1,76 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taules.html</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/CSSTaules.css"> <!--enlazamos la pagina html con una css-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+        } /*creamos una fuente para el título*/
+        </style>
+        
+<!--Aqui damos forma a la tabla con los bordes "border" y con el border-collapse hacemos que los bordes se vean bien-->
+    <style>
+        table, th, td{ 
+
+                border: 1px solid orange;
+
+                border-collapse: collapse;
+                }
+
+        th{
+
+            text-align: center;
+        }
+
+        td, th {
+            padding: 10px
+        }
+    </style>
+</head>
+<body>
+    <header> <!--creamos el encabezado con un titulo un subtitulo y un navegador-->
+        <h1>Pàgina de taules:</h1>
+        <hr>
+        <nav>
+
+                <a  href="Inici.html"class="selected">Inici</a>
+                <a  href="audios.html" class="selected">Pàgina d'audios</a>
+                <a  href="videos.html" class="selected">Pàgina de videos</a>
+                <a  href="taules.html" class="selected">Pàgina de taules</a>
+                <a  href="IniciarSessió.html" class="selected">Iniciar sessió</a>
+
+        </nav>
+        <hr>
+    </header>
+        <table > <!--creamos la tabla con <table> + <tr>-->
+            <tr>
+                <th><b>Ciudad</b></th> <!-- con el comando <th> la fila principal-->
+                <th><b>País</b></th>
+                <th><b>Continente</b></th>
+            </tr>
+            <tr>
+                <td>Roma</td> <!-- con el comando <td> lo demas de la tabla-->
+                <td>Italia</td>
+                <td>Europa</td>
+            </tr>
+    
+            <tr>
+                <td>El Cairo</td>
+                <td>Egipto</td>
+                <td>África</td>
+            </tr>
+    
+            <tr>
+                <td>Tokio</td>
+                <td>Japón</td>
+                <td>Asia</td>
+            </tr>
+    
+        </table>
+    
+</body>
+</html>

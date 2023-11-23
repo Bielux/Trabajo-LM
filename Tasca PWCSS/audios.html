@@ -1,0 +1,44 @@
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>audios.html</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="CSS/CSSAudios.css"> <!--enlazamos la pagina html con una css-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+            h1 {
+                font-family: 'Bebas Neue', sans-serif;
+            } /*creamos una fuente para el título*/
+            </style>
+    </head>
+    <body>
+        <header>           <!--creamos el encabezado con un titulo un subtitulo y un navegador-->
+            <h1>Pàgina de audios:</h1>
+
+            <hr>
+            <nav>
+    
+                    <a  href="Inici.html"class="selected">Inici</a>
+                    <a  href="audios.html" class="selected">Pàgina d'audios</a>
+                    <a  href="videos.html" class="selected">Pàgina de videos</a>
+                    <a  href="taules.html" class="selected">Pàgina de taules</a>
+                    <a  href="IniciarSessió.html" class="selected">Iniciar sessió</a>
+
+            </nav>
+            <hr>
+        </header>
+    <!--Para que se vea los audios se usa el comando <audio src="aqui pondremos el enlace del video en .mp3"-->
+        <article>
+            <p>Audio 1:</p>
+            <audio src="MP3/chinchan.mp3" controls> <!--a continuación ejecutaremos el comando controls para que se vean los controles del audio-->
+            </audio>
+            <p>Audio 2:</p>
+            <audio src="MP3/cr7.mp3" controls>
+            </audio>
+        </article>
+    </body>
+</html>
